@@ -1,7 +1,6 @@
 package strategy;
 
-public class StripBehavior implements DefenseBehavior
-{
+public class StripBehavior implements DefenseBehavior{
 
     @Override
     public String play() {

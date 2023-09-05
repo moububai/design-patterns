@@ -1,7 +1,6 @@
 package strategy;
 
-public class ReceiveBehavior implements OffenseBehavior
-{
+public class ReceiveBehavior implements OffenseBehavior{
 
     @Override
     public String play() {
@@ -9,8 +8,7 @@ public class ReceiveBehavior implements OffenseBehavior
         String toReturn = "runs a ";
         String[] action = { "slant route", "out route", "seem route", "screen pass", "hail mary" };
         int rand = (int)(Math.random() * 4) + 1; // 1 to 4
-        switch(rand)
-        {
+        switch(rand){
             case 1:
                 return toReturn + action[0];
             case 2:

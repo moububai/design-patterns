@@ -1,23 +1,21 @@
 package strategy;
 
-public class QuarterBack extends Player
-{
-    public QuarterBack(String firstName, String lastName, boolean offense)
-    {
+public class QuarterBack extends Player{
+    public QuarterBack(String firstName, String lastName, boolean offense){
         super(firstName, lastName, offense);
     }
 
-    public void setDefenseBehavior()
-    {
+    public void setDefenseBehavior(){
         defenseBehavior = null;
     }
-    public void setOffenseBehavior()
-    {
+    public void setOffenseBehavior(){
         int rand = (int)(Math.random() * 2) + 1; // 1 or 2
-            if (rand == 1)
+            if (rand == 1){
                 offenseBehavior = new RunBehavior();
-            else
+            }
+            else{
                 offenseBehavior = new PassBehavior();
+            }
     }
     
 }
