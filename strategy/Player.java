@@ -22,7 +22,7 @@ public class Player implements DefenseBehavior, OffenseBehavior
     }
     public String play()
     {
-        if(offense == true)
+        if(offense)
         {
             this.setOffenseBehavior();
             if (this.offenseBehavior == null)
