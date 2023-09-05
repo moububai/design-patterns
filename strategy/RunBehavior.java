@@ -1,5 +1,9 @@
 package strategy;
 
+/*
+ * Run behavior patterm for the player: QuaterBack on offense
+ */
+
 public class RunBehavior implements OffenseBehavior{
 
     @Override

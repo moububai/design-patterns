@@ -1,5 +1,9 @@
 package strategy;
 
+/*
+ * Strip behavior patterm for the player: Lineman on defense
+ */
+
 public class StripBehavior implements DefenseBehavior{
 
     @Override

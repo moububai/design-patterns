@@ -1,5 +1,15 @@
 package strategy;
 
+/*
+ * Enumeration of the PlayerType
+ * DefenseBehavior Options:
+ * BlockBeavhior
+ * StripBehavior
+ * SackBeavior
+ * OffeseBehavior Options:
+ * OBlockBehavior
+ */
+
 public class Lineman extends Player{
     public Lineman(String firstName, String lastName, boolean offense){
         super(firstName, lastName, offense);

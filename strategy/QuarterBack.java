@@ -1,5 +1,15 @@
 package strategy;
 
+/*
+ * Enumeration of the PlayerType
+ * DefenseBehavior Options:
+ * none
+ * SackBeavior
+ * OffeseBehavior Options:
+ * RunBehavior
+ * PassBehavior
+ */
+
 public class QuarterBack extends Player{
     public QuarterBack(String firstName, String lastName, boolean offense){
         super(firstName, lastName, offense);

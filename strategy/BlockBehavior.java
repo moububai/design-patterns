@@ -1,5 +1,9 @@
 package strategy;
 
+/*
+ * Block behavior pattern for defense player that implements a play command for the Player class
+ */
+
 public class BlockBehavior implements DefenseBehavior{
 
     @Override

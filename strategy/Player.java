@@ -1,4 +1,8 @@
 package strategy;
+/*
+ * General Player Construcer that can further create a QuaterBack, Reciever, or Lineman.
+ * Has the toString Method fror the enumerations of PlayerType and the options to change Attack to Defense or vice versa.
+ */
 
 public class Player implements DefenseBehavior, OffenseBehavior{
     private String firstName, lastName;

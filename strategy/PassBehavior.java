@@ -1,4 +1,7 @@
 package strategy;
+/*
+ * Pass behavior patterm for the player: Quaterback on offense
+ */
 
 public class PassBehavior implements OffenseBehavior 
 {

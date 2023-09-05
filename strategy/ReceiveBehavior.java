@@ -1,5 +1,9 @@
 package strategy;
 
+/*
+ * Recieve behavior patterm for the player: Reciever on offense
+ */
+
 public class ReceiveBehavior implements OffenseBehavior{
 
     @Override
