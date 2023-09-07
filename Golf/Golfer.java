@@ -1,9 +1,6 @@
 package Golf;
 
 import java.util.ArrayList;
-/*
- * Method EnterScore needs to be done
- */
 
 public class Golfer implements Subject {
     private ArrayList<Observer> observers;
