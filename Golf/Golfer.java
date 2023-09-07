@@ -29,7 +29,7 @@ public class Golfer implements Subject {
     }
 
     public void enterScore(int strokes, int par){
-        
+        notifyObserver(strokes, par);
     }
 
     public String getName(){

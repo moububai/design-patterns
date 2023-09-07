@@ -7,17 +7,19 @@ public class RoundScoreDisplay implements Observer {
 
     public RoundScoreDisplay(Subject golfer){
         this.golfer = golfer;
+        golfer.registerObserver(this);
     }
 
     public void update(int strokes, int par){
         this.strokesTotal += strokes;
         this.parTotal += par;
+
     }
     public String toString(){
         if (this.strokesTotal > this.parTotal){
-            return "Current Hole stats: Par (" + Integer.toString(this.parTotal) + ") Strokes (" + Integer.toString(this.strokesTotal) + "), " + (this.strokesTotal - this.parTotal) + " over par";
+            return "Overall stats: Par (" + Integer.toString(this.parTotal) + ") Strokes (" + Integer.toString(this.strokesTotal) + "), " + (this.strokesTotal - this.parTotal) + " over par";
         }
-        return "Current Hole stats: Par (" + Integer.toString(this.parTotal) + ") Strokes (" + Integer.toString(this.strokesTotal) + "), Making par";
+        return "Overall stats: Par (" + Integer.toString(this.parTotal) + ") Strokes (" + Integer.toString(this.strokesTotal) + "), Making par";
     }
     
 }
