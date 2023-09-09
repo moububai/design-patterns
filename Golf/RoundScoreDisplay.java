@@ -1,7 +1,7 @@
 package Golf;
 
 /*
- * A RoundScoreDisplay is craeted that allows the user to get notified of changes given by the Golfer
+ * A RoundScoreDisplay is created that allows the user to get notified of changes given by the Golfer
  * 
  * This allows the overall hole stats to be seen by the user. 
  * Stats seen:

@@ -17,7 +17,7 @@ public class Golfer implements Subject {
     private String name;
 
     /*
-     * Constructer that initizliazes the arraylist of Observers and gives the Golfer a name.
+     * Initializes the arraylist of Observers and gives the Golfer a name.
      * 
      * @param name      The name of the Golfer is connnected to the class 
      */
