@@ -56,6 +56,9 @@ public class HoleScoreDisplay implements Observer {
         if (this.strokes > this.par){
             return "Current Hole stats: Par (" + Integer.toString(this.par) + ") Strokes (" + Integer.toString(this.strokes) + "), " + (this.strokes - this.par) + " over par";
         }
+        if (this.par > this.strokes){
+            return "Current Hole stats: Par (" + Integer.toString(this.par) + ") Strokes (" + Integer.toString(this.strokes) + "), " + (this.par - this.strokes) + " under par";
+        }
         return "Current Hole stats: Par (" + Integer.toString(this.par) + ") Strokes (" + Integer.toString(this.strokes) + "), Making par";
         
     }

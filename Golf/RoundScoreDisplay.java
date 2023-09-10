@@ -58,6 +58,9 @@ public class RoundScoreDisplay implements Observer {
         if (this.strokesTotal > this.parTotal){
             return "Overall stats: Par (" + Integer.toString(this.parTotal) + ") Strokes (" + Integer.toString(this.strokesTotal) + "), " + (this.strokesTotal - this.parTotal) + " over par";
         }
+        if (this.parTotal > this.strokesTotal){
+            return "Overall stats: Par (" + Integer.toString(this.parTotal) + ") Strokes (" + Integer.toString(this.strokesTotal) + "), " + (this.parTotal - this.strokesTotal) + " under par";
+        }
         return "Overall stats: Par (" + Integer.toString(this.parTotal) + ") Strokes (" + Integer.toString(this.strokesTotal) + "), Making par";
     }
     
