@@ -13,7 +13,7 @@ public abstract class Vehicle{
     public String toString(){
         String complete = "";
         for (String line: lines)
-            complete += line;
+            complete += line + "\n";
         return complete;
     }
 
