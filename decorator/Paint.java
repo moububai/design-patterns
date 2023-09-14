@@ -2,7 +2,11 @@ package decorator;
 
 public class Paint extends VehicleDecorator{
     
-    public Paint(Vehicle vehicle){
-
+    /*
+     * Need to look over this
+     */
+    
+    public Paint(Vehicle vehicle, String color){
+        super(FileReader.getLines(color));
     }
 }
