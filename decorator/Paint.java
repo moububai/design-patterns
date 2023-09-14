@@ -8,8 +8,9 @@ public class Paint extends VehicleDecorator{
     
     public Paint(Vehicle vehicle, String color){
         super(vehicle.lines);
-        vehicle.lines.set(0, findColor(color) + vehicle.lines.get(0));
         int lastLine = vehicle.lines.size() - 1;
+        
+        vehicle.lines.set(0, findColor(color) + vehicle.lines.get(0));
         vehicle.lines.set(lastLine, vehicle.lines.get(lastLine) + findColor("black"));
     }
 
@@ -22,6 +23,6 @@ public class Paint extends VehicleDecorator{
                 return colors[i][1];
             }
         }
-        return "Color not found";
+        return "\\u001B[0m";
     }
 }
