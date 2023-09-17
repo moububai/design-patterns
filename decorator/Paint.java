@@ -53,6 +53,6 @@ public class Paint extends VehicleDecorator{
                 return colors[i][1];
             }
         }
-        return "\\u001B[0m";
+        return "";
     }
 }

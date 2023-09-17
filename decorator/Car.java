@@ -15,6 +15,6 @@ public class Car extends Vehicle{
      * Initializes the String arraylist in vehicles through reading the text file that contains a ascii art of a car
      */
     public Car(){
-        super(FileReader.getLines("decorator\\car.txt"));
+        super(FileReader.getLines("decorator\\text\\car.txt"));
     }
 }

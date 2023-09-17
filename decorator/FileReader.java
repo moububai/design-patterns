@@ -5,6 +5,9 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+/*
+ * @author Portia Plante
+ */
 public class FileReader {
     public static ArrayList<String> getLines(String fileName) {
         ArrayList<String> lines = new ArrayList<String>();

@@ -2,6 +2,10 @@ package decorator;
 
 import java.util.Scanner;
 
+/*
+ * @author Portia Plante
+ */
+
 public class CarLotDriver {
 	private Scanner scanner;
 
