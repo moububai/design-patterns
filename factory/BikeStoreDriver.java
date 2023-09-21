@@ -2,6 +2,11 @@ package factory;
 
 import java.util.Scanner;
 
+/*
+ * 
+ * @author Portia Plante
+ */
+
 public class BikeStoreDriver {
 	private Scanner scanner;
 
