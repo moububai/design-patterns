@@ -35,11 +35,11 @@ public class Game {
     }
 
     private void checkLevel(){
-        if (score >= 6){
-                level = Difficulty.MEDIUM;
-            }
-            else if (score >= 10){
+        if (score >= 10){
                 level = Difficulty.HARD;
+            }
+            else if (score >= 6){
+                level = Difficulty.MEDIUM;
             }
             else{
                 level = Difficulty.EASY;
