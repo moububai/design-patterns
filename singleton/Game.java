@@ -56,28 +56,41 @@ public class Game {
      * Loads a random anagram, the rearragnment is given to the user
      * 
      * The level is checked when this method is called, to determine the difficulty of the Anagram(3,4,or 5 letters).
+     * Within each iteration of a difficulty the word will not repeat, between the iterations the same word will not 
+     * appear twice.
      * 
      * @param currentAnagram.getQuestion()      Returns in string the current rearrangment of an Anagram
      */
 
     public String getQuestion(){
         checkLevel();
-        currentAnagram = (anagrams.get(level)).get(rand.nextInt(anagrams.get(level).size()));
-        return currentAnagram.getQuestion();
+        if (anagrams.get(level).isEmpty()){
+            anagrams.replace(level,FileReader.getAnagrams(level));
+        }
+        int random = rand.nextInt(anagrams.get(level).size());
+
+        while(true){
+            if (!(anagrams.get(level)).get(random).equals(currentAnagram)){
+            currentAnagram = (anagrams.get(level)).get(random);
+            anagrams.get(level).remove(random);
+            return currentAnagram.getQuestion();
+        }
+        random = rand.nextInt(anagrams.get(level).size());
+        }
     }
 
     /*
      * Loads the current Difficulty the user is on
      * 
-     *  This method is used when creating a question 
+     *  This method is used when retriving a question 
      * 
      */
 
     private void checkLevel(){
-        if (score >= 10){
+        if (score >= 7){
                 level = Difficulty.HARD;
             }
-            else if (score >= 6){
+            else if (score >= 4){
                 level = Difficulty.MEDIUM;
             }
             else{
