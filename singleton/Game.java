@@ -42,7 +42,7 @@ public class Game {
      * Loads for the class to be working so the class does not destory when complete 
      * 
      * 
-     * @param game      The instantiation of the class is loaded
+     * @return game      The instantiation of the class is loaded
      */
 
     public static Game getInstance(){
@@ -59,7 +59,7 @@ public class Game {
      * Within each iteration of a difficulty the word will not repeat, between the iterations the same word will not 
      * appear twice.
      * 
-     * @param currentAnagram.getQuestion()      Returns in string the current rearrangment of an Anagram
+     * @return currentAnagram.getQuestion()      Returns in string the current rearrangment of an Anagram
      */
 
     public String getQuestion(){
@@ -104,7 +104,7 @@ public class Game {
      * This allows the score to be updated: when the user's answer is right the score decreases, when the score
      * get's higher the score increases.
      * 
-     * @pram boolean        returns true if the user's answer matches a correct Arragnemnt of the Anagram
+     * @return boolean        returns true if the user's answer matches a correct Arragnemnt of the Anagram
      */
 
     public boolean isCorrect(String userAnswer){
