@@ -112,7 +112,9 @@ public class Game {
             score++;
             return true;
         }
-        score--;
+        if (score > 0){
+            score--;
+        }
         return false;
     }
     
