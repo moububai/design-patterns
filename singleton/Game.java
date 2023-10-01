@@ -41,7 +41,6 @@ public class Game {
     /*
      * Loads for the class to be working so the class does not destory when complete 
      * 
-     * 
      * @return game      The instantiation of the class is loaded
      */
 
@@ -82,8 +81,7 @@ public class Game {
     /*
      * Loads the current Difficulty the user is on
      * 
-     *  This method is used when retriving a question 
-     * 
+     * This method is used when retriving a question 
      */
 
     private void checkLevel(){
