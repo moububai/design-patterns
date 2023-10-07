@@ -2,6 +2,13 @@ package iterator;
 
 import java.util.*;
 
+/*
+ * 
+ * 
+ * @author Cameron Reyes
+ * @version 1.0 build Sept 30, 2023
+ */
+
 public class Document {
 
     private String title;
@@ -15,13 +22,12 @@ public class Document {
     }
 
     public String makeChange(String change){
-        undoStack.push(change);
-        return "Making change: " + change;
+        return "Making change: " + undoStack.push(change);
     }
 
     public String undoChange(){
         if (!canUndo()) return null;
-        return undoStack.push(redoStack.pop());
+        return "Undoing: " + redoStack.push(undoStack.pop());
     }
 
     public boolean canUndo(){
@@ -30,7 +36,7 @@ public class Document {
 
     public String redoChange(){
         if (!canRedo()) return null;
-        return redoStack.push(undoStack.pop());
+        return "Redoing: " + undoStack.push(redoStack.pop());
     }
 
     public boolean canRedo(){
