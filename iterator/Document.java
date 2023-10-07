@@ -20,25 +20,21 @@ public class Document {
     }
 
     public String undoChange(){
-        if (canUndo()){
-            return redoStack.pop();
-        }
-        return "";
+        if (!canUndo()) return null;
+        return undoStack.push(redoStack.pop());
     }
 
     public boolean canUndo(){
-        return ! undoStack.empty();
+        return !(undoStack.empty());
     }
 
     public String redoChange(){
-        if (canRedo()){
-            return undoStack.pop();
-        }
-        return "";
+        if (!canRedo()) return null;
+        return redoStack.push(undoStack.pop());
     }
 
     public boolean canRedo(){
-        return !redoStack.empty();
+        return !(redoStack.empty());
     }
 
     public StackIterator getUndoIterator(){
